@@ -1,0 +1,586 @@
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    gap: 0px; /*si las medidas van a ser iguales entre ambas uso gap*/
+    
+    /*column-gap: 10px; separacion entre columnas
+    row-gap: 20px; separacion entre filas*/
+
+}
+
+/*contenedor general*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Anton', sans-serif ;
+}
+ 
+.box{
+    background: black;
+    padding: 3px;
+    color: white;
+    text-align: center;
+}
+
+.box1{
+     grid-column:1 / 5 ;
+}
+  
+/*header*/
+  
+.navbar{
+    background: black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+font-weight: bold;
+font-size: 40px;
+margin: 15px;
+color: white;
+}
+.nav-items a{
+margin: 15px;
+color: white;
+text-decoration: none;
+font-size: 30px;
+ }
+
+/*::before crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido
+ estético a un elemento, usando la propiedad content . Este elemento se muestra en línea con el texto de forma predeterminada.*/
+ 
+.nav-items a::before{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0;
+height: 2px;
+background: white;
+transition: all 0.5s;
+ }
+
+ .nav-toggle{
+   display: none;
+}
+
+.box2{
+    grid-column: 1 / 4;
+}
+.box2 h1{
+    border: solid;
+    text-align: left;
+    font-size: 100px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    margin-left: 30px;
+}
+.box2 h2{
+   font-size: 35px;
+   text-align:center;
+}
+
+
+.box3 img{
+    width: 300px;
+    border-radius: 10px;
+    
+}
+
+.box4{
+    grid-column: 1 / 3;
+}
+
+.box5{
+    font-size: 22px;
+}
+.box5 p{
+    text-align: center;
+}
+
+
+
+.box6 img{
+    width: 300px;
+    border-radius: 10px;
+    
+}
+
+.box7{
+    background: black;
+   color: black;
+   grid-column: 1 / 5;
+}  
+
+.box8{
+    background: rgb(22, 21, 21);
+    grid-column: 1 / 5;
+   
+
+}
+
+.box9{
+    background:black;
+
+}
+.box9 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box9 h5{
+    font-size: 25px;
+}
+
+.box9 p{
+    font-size: 17px;
+}
+
+.box10{
+    background: black;
+    
+}
+
+.box10 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box10 h5{
+    font-size: 25px;
+}
+
+.box10 p{
+    font-size: 17px;
+}
+
+.box11{
+    background: black;
+}
+
+.box11 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box11 h5{
+    font-size: 25px;
+}
+
+.box11 p{
+    font-size: 17px;
+}
+
+.box12{
+    background: black;
+}
+
+.box12 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box12 h5{
+    font-size: 25px;
+}
+
+.box12 p{
+    font-size: 17px;
+}
+
+.box13{
+    background: black;
+}
+
+.box13 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box13 h5{
+    font-size: 25px;
+}
+
+.box13 p{
+    font-size: 17px;
+}
+
+.box14{
+    background: black;
+}
+
+.box14 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box14 h5{
+    font-size: 25px;
+}
+
+.box14 p{
+    font-size: 17px;
+}
+
+.box15{
+    background: black;
+}
+
+.box15 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box15 h5{
+    font-size: 25px;
+}
+
+.box15 p{
+    font-size: 17px;
+}
+
+.box16 {
+    background: black;
+}
+
+.box16 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box16 h5{
+    font-size: 25px;
+}
+
+.box16 p{
+    font-size: 17px;
+}
+
+.box17{
+    background: black;
+}
+
+.box17 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box17 h5{
+    font-size: 25px;
+}
+
+.box17 p{
+    font-size: 17px;
+}
+
+.box18{
+    background: black;
+}
+
+.box18 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box18 h5{
+    font-size: 25px;
+}
+
+.box18 p{
+    font-size: 17px;
+}
+
+.box19{
+    background: black;
+}
+
+.box19 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box19 h5{
+    font-size: 25px;
+}
+
+.box19 p{
+    font-size: 17px;
+}
+
+.box20 img{
+    width: 300px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box21{
+    background: rgb(22, 21, 21);
+   color: rgb(22, 21, 21);
+   grid-column: 1 / 5;
+}
+
+.box22{
+  grid-column: 1 / 5;  
+  color: black;
+  background: black;
+}
+
+.box23 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;  
+}
+
+
+
+.box24 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px; 
+}
+
+.box25 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px; 
+}
+
+.box26 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px; 
+}
+
+.box27 {
+  grid-column: 1 / 5;
+ background: black;
+ color: black; 
+}
+           
+    
+    
+ 
+
+ 
+ 
+
+
+
+/*media queris*/
+
+@media (max-width: 768px) {
+    .nav-items{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        transform: translate(-100%);
+        transition: 0.3s ease all;
+        z-index: 1;
+    }
+     .nav-items a{
+    text-align: center;
+     }
+    
+    .nav-toggle{
+       
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+    
+    .nav-toggle span{
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px; /*La propiedad CSS transform-origin le permite modificar el origen de las transformaciones de un elemento. Por ejemplo, el transform-origin de la función rotate() es el centro de rotación. (Esta propiedad es aplicada a la primera translación del elemento por el valor negativo de la propiedad.*/
+        transition: all 0.2s linear;
+    }
+    
+    .close span{
+    transform: rotate(45deg) translate(0px, 0px);
+    }
+    
+    .close span:nth-child(2){
+        display: none;
+    
+    }
+    
+    .close span:nth-child(3){  /*nth-child() es una pseudo-clase que selecciona a los elementos en un grupo de hermanos que coinciden con el patrón especificado. La forma en la que se construye dicho patrón es usando palabras clave, valores enteros, una fórmula e incluso selectores.*/
+    transform: rotate(-45deg) translate(-5px 1px);
+    }
+    .open{ transform: translatex(0) !important}
+    
+    .box2{
+        grid-column: 1 / -1;
+    }
+    
+    .box3{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box4{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box5{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box6{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box7{ 
+        grid-column: 1 / -1; 
+    }
+
+
+    .box8{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box9{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box10{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box11{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box12{ 
+        grid-column: 1 / -1; 
+    }
+
+
+    .box13{ 
+        grid-column: 1 / -1; 
+    }
+
+
+    .box14{ 
+        grid-column: 1 / -1; 
+    }
+
+
+    .box15{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box16{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box17{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box18{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box19{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box20{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box21{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box22{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box23{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box24{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box25{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box26{ 
+        grid-column: 1 / -1; 
+    }
+
+    .box27{ 
+        grid-column: 1 / -1; 
+    }
+
+
+
+
+
+    
+    
+
+    
+    }
+    
+    
+
+
+  
+    
+
+

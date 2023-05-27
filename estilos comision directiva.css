@@ -1,0 +1,157 @@
+
+/*contenedor general*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Anton', sans-serif ;
+}
+ 
+/*header*/
+.navbar{
+    background: black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+font-weight: bold;
+font-size: 20px;
+margin: 15px;
+color: white;
+}
+.nav-items a{
+margin: 15px;
+color: white;
+text-decoration: none;
+ }
+
+ .nav-items a::before{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0;
+height: 2px;
+background: white;
+transition: all 0.5s;
+ }
+
+ .nav-toggle{
+   
+    display: none;
+}
+
+
+
+
+/*main*/
+
+.container h2{
+   font-size: 35px;
+   text-align: center;
+}
+
+.container h3{
+    font-size: 35px;
+    text-align: center;
+}
+
+/*footer*/
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    border-bottom: 30px;
+    margin-top: 5px;
+}
+
+.datos{
+    background-color: black;
+    margin: 2px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 33%;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+  
+  .datos img{
+    width: 50px;
+    height: 50px;
+}
+
+.derechos{
+  width: 100%;
+  background-color: black;
+  margin: 3px;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+
+/*media queris*/
+
+@media (max-width: 768px) {
+    .nav-items{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        transform: translate(-100%);
+        transition: 0.3s ease all;
+        z-index: 1;
+    }
+     .nav-items a{
+    text-align: center;
+     }
+    
+    .nav-toggle{
+       
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+    
+    .nav-toggle span{
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+    
+    .close span{
+    transform: rotate(45deg) translate(0px, 0px);
+    }
+    
+    .close span:nth-child(2){
+        display: none;
+    
+    }
+    
+    .close span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px 1px);
+    }
+    .open{ transform: translatex(0) !important}
+    
+    }
+    
