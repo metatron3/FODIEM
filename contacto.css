@@ -46,7 +46,40 @@ transition: all 0.5s;
     display: none;
 }
 
+
+.box2 form{
+    background-color: black;
+    margin: 0 auto;
+    width: 600px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family:'Anton', sans-serif ;
+}
+
+.box2 input{
+padding: 10px;
+text-align: center;
+display: flex;
+}
+
+
+button{
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+#boton:hover{
+    box-shadow: none;
+    background-color: rgb(61, 61, 63);
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+     
+}
 .btn-wsp{
+    
     width: 150px;
     height: 55px;
     line-height: 55px;
